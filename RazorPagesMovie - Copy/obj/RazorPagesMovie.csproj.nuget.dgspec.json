@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Thatg\\OneDrive\\Desktop\\csci340lab8\\RazorPagesMovie - Copy\\RazorPagesMovie.csproj": {}
+    "c:\\Users\\Thatg\\OneDrive\\Desktop\\csci340lab8\\RazorPagesMovie - Copy\\RazorPagesMovie.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Thatg\\OneDrive\\Desktop\\csci340lab8\\RazorPagesMovie - Copy\\RazorPagesMovie.csproj": {
+    "c:\\Users\\Thatg\\OneDrive\\Desktop\\csci340lab8\\RazorPagesMovie - Copy\\RazorPagesMovie.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Thatg\\OneDrive\\Desktop\\csci340lab8\\RazorPagesMovie - Copy\\RazorPagesMovie.csproj",
+        "projectUniqueName": "c:\\Users\\Thatg\\OneDrive\\Desktop\\csci340lab8\\RazorPagesMovie - Copy\\RazorPagesMovie.csproj",
         "projectName": "RazorPagesMovie",
-        "projectPath": "C:\\Users\\Thatg\\OneDrive\\Desktop\\csci340lab8\\RazorPagesMovie - Copy\\RazorPagesMovie.csproj",
+        "projectPath": "c:\\Users\\Thatg\\OneDrive\\Desktop\\csci340lab8\\RazorPagesMovie - Copy\\RazorPagesMovie.csproj",
         "packagesPath": "C:\\Users\\Thatg\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Thatg\\OneDrive\\Desktop\\csci340lab8\\RazorPagesMovie - Copy\\obj\\",
+        "outputPath": "c:\\Users\\Thatg\\OneDrive\\Desktop\\csci340lab8\\RazorPagesMovie - Copy\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Thatg\\AppData\\Roaming\\NuGet\\NuGet.Config"
