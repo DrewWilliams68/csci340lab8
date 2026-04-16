@@ -20,40 +20,40 @@ namespace RazorPagesMovie.Pages_Movies
             _context = context;
         }
             
-        public IList<Movie> Movie { get;set; } = default!;
+        public IList<Games> Games { get;set; } = default!;
 
             [BindProperty(SupportsGet = true)]
             public string? SearchString { get; set; }
 
-            public SelectList? Genres { get; set; }
+            public SelectList? Type { get; set; }
 
             [BindProperty(SupportsGet = true)]
-    public string? MovieGenre { get; set; }
+    public string? GameType { get; set; }
         public async Task OnGetAsync()
 {
     // <snippet_search_linqQuery>
-    IQueryable<string> genreQuery = from m in _context.Movie
-                                    orderby m.Genre
-                                    select m.Genre;
+    IQueryable<string> typeQuery = from m in _context.Games
+                                    orderby m.Type
+                                    select m.Type;
     // </snippet_search_linqQuery>
 
-    var movies = from m in _context.Movie
+    var games = from m in _context.Games
                  select m;
 
     if (!string.IsNullOrEmpty(SearchString))
     {
-        movies = movies.Where(s => s.Title.Contains(SearchString));
+        games = games.Where(s => s.GameTitle.Contains(SearchString));
     }
 
-    if (!string.IsNullOrEmpty(MovieGenre))
+    if (!string.IsNullOrEmpty(GameType))
     {
-        movies = movies.Where(x => x.Genre == MovieGenre);
+        games = games.Where(x => x.Type == GameType);
     }
 
     // <snippet_search_selectList>
-    Genres = new SelectList(await genreQuery.Distinct().ToListAsync());
+    Type = new SelectList(await typeQuery.Distinct().ToListAsync());
     // </snippet_search_selectList>
-    Movie = await movies.ToListAsync();
+    Games = await games.ToListAsync();
         }
     }
 }

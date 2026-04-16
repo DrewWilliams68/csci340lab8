@@ -17,13 +17,13 @@ public class Games
     [Column(TypeName = "decimal(18, 2)")]
     public decimal Price { get; set; }
 
-    [RegularExpression(@"^[A-Z]+[a-zA-Z\s]*$")]
+    [RegularExpression(@"^[A-Z]+[a-zA-Z0-9""'\s-]*$")]
     [Required]
     [StringLength(30)]
     public string Type { get; set; } = string.Empty;
 
     [RegularExpression(@"^[A-Z]+[a-zA-Z0-9""'\s-]*$")]
-    [StringLength(5)]
+    [StringLength(30)]
     [Required]
     public string SoldCopies { get; set; } = string.Empty;
 
