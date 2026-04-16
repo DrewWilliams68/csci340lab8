@@ -13,52 +13,52 @@ namespace RazorPagesMovie.Models
             using (var context = new RazorPagesMovieContext(
                 serviceProvider.GetRequiredService<DbContextOptions<RazorPagesMovieContext>>()))
             {
-                if (context == null || context.Movie == null)
+                if (context == null || context.Games == null)
                 {
                     throw new ArgumentNullException("Null RazorPagesMovieContext");
                 }
 
                 // Look for any movies.
-                if (context.Movie.Any())
+                if (context.Games.Any())
                 {
                     return;   // DB has been seeded
                 }
 
-                context.Movie.AddRange(
-                    new Movie
+                context.Games.AddRange(
+                    new Games
                     {
-                        Title = "When Harry Met Sally",
-                        ReleaseDate = DateTime.Parse("1989-2-12"),
-                        Genre = "Romantic Comedy",
-                        Price = 7.99M,
-                        Rating = "R"
+                        GameTitle = "MineCraft",
+                        Price = 29.99M,
+                        Type = "Adventure",
+                        SoldCopies = "239 million",
+                        SkillLevel = "Easy"
                     },
 
-                    new Movie
+                    new Games
                     {
-                        Title = "Ghostbusters ",
-                        ReleaseDate = DateTime.Parse("1984-3-13"),
-                        Genre = "Comedy",
-                        Price = 8.99M,
-                        Rating = "G"
+                        GameTitle = "MineCraft",
+                        Price = 29.99M,
+                        Type = "Adventure",
+                        SoldCopies = "239 million",
+                        SkillLevel = "Easy"
                     },
 
-                    new Movie
+                    new Games
                     {
-                        Title = "Ghostbusters 2",
-                        ReleaseDate = DateTime.Parse("1986-2-23"),
-                        Genre = "Comedy",
-                        Price = 9.99M,
-                        Rating = "G"
+                        GameTitle = "MineCraft",
+                        Price = 29.99M,
+                        Type = "Adventure",
+                        SoldCopies = "239 million",
+                        SkillLevel = "Easy"
                     },
 
-                    new Movie
+                    new Games
                     {
-                        Title = "Rio Bravo",
-                        ReleaseDate = DateTime.Parse("1959-4-15"),
-                        Genre = "Western",
-                        Price = 3.99M,
-                        Rating = "NA"
+                        GameTitle = "MineCraft",
+                        Price = 29.99M,
+                        Type = "Adventure",
+                        SoldCopies = "239 million",
+                        SkillLevel = "Easy"
                     }
                 );
                 context.SaveChanges();
