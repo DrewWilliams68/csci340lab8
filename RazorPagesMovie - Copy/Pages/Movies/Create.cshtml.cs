@@ -25,7 +25,7 @@ namespace RazorPagesMovie.Pages_Movies
         }
 
         [BindProperty]
-        public Movie Movie { get; set; } = default!;
+        public Games Games { get; set; } = default!;
 
         // For more information, see https://aka.ms/RazorPagesCRUD.
         public async Task<IActionResult> OnPostAsync()
@@ -35,7 +35,7 @@ namespace RazorPagesMovie.Pages_Movies
                 return Page();
             }
 
-            _context.Movie.Add(Movie);
+            _context.Games.Add(Games);
             await _context.SaveChangesAsync();
 
             return RedirectToPage("./Index");

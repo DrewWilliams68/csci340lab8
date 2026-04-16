@@ -20,7 +20,7 @@ namespace RazorPagesMovie.Pages_Movies
         }
 
         [BindProperty]
-        public Movie Movie { get; set; } = default!;
+        public Games Games { get; set; } = default!;
 
         public async Task<IActionResult> OnGetAsync(int? id)
         {
@@ -29,11 +29,11 @@ namespace RazorPagesMovie.Pages_Movies
                 return NotFound();
             }
 
-            var movie = await _context.Movie.FirstOrDefaultAsync(m => m.Id == id);
+            var games = await _context.Games.FirstOrDefaultAsync(m => m.Id == id);
 
-            if (movie is not null)
+            if (games is not null)
             {
-                Movie = movie;
+                Games = games;
 
                 return Page();
             }
@@ -48,11 +48,11 @@ namespace RazorPagesMovie.Pages_Movies
                 return NotFound();
             }
 
-            var movie = await _context.Movie.FindAsync(id);
-            if (movie != null)
+            var games = await _context.Games.FindAsync(id);
+            if (games != null)
             {
-                Movie = movie;
-                _context.Movie.Remove(Movie);
+                Games = games;
+                _context.Games.Remove(Games);
                 await _context.SaveChangesAsync();
             }
 

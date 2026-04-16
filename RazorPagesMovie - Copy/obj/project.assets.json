@@ -6459,11 +6459,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\Thatg\\OneDrive\\Desktop\\csci340lab8\\RazorPagesMovie - Copy\\RazorPagesMovie.csproj",
+      "projectUniqueName": "C:\\Users\\Thatg\\OneDrive\\Desktop\\csci340lab8\\RazorPagesMovie - Copy\\RazorPagesMovie.csproj",
       "projectName": "RazorPagesMovie",
-      "projectPath": "c:\\Users\\Thatg\\OneDrive\\Desktop\\csci340lab8\\RazorPagesMovie - Copy\\RazorPagesMovie.csproj",
+      "projectPath": "C:\\Users\\Thatg\\OneDrive\\Desktop\\csci340lab8\\RazorPagesMovie - Copy\\RazorPagesMovie.csproj",
       "packagesPath": "C:\\Users\\Thatg\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\Thatg\\OneDrive\\Desktop\\csci340lab8\\RazorPagesMovie - Copy\\obj\\",
+      "outputPath": "C:\\Users\\Thatg\\OneDrive\\Desktop\\csci340lab8\\RazorPagesMovie - Copy\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Thatg\\AppData\\Roaming\\NuGet\\NuGet.Config"

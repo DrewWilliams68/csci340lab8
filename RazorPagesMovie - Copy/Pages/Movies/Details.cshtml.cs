@@ -19,7 +19,7 @@ namespace RazorPagesMovie.Pages_Movies
             _context = context;
         }
 
-        public Movie Movie { get; set; } = default!;
+        public Games Games { get; set; } = default!;
 
         public async Task<IActionResult> OnGetAsync(int? id)
         {
@@ -28,11 +28,11 @@ namespace RazorPagesMovie.Pages_Movies
                 return NotFound();
             }
 
-            var movie = await _context.Movie.FirstOrDefaultAsync(m => m.Id == id);
+            var games = await _context.Games.FirstOrDefaultAsync(m => m.Id == id);
 
-            if (movie is not null)
+            if (games is not null)
             {
-                Movie = movie;
+                Games = games;
 
                 return Page();
             }

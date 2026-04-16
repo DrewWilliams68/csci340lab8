@@ -21,7 +21,7 @@ namespace RazorPagesMovie.Pages_Movies
         }
 
         [BindProperty]
-        public Movie Movie { get; set; } = default!;
+        public Games Games { get; set; } = default!;
 
         public async Task<IActionResult> OnGetAsync(int? id)
         {
@@ -30,12 +30,12 @@ namespace RazorPagesMovie.Pages_Movies
                 return NotFound();
             }
 
-            var movie =  await _context.Movie.FirstOrDefaultAsync(m => m.Id == id);
-            if (movie == null)
+            var games =  await _context.Games.FirstOrDefaultAsync(m => m.Id == id);
+            if (games == null)
             {
                 return NotFound();
             }
-            Movie = movie;
+            Games = games;
             return Page();
         }
 
@@ -48,7 +48,7 @@ namespace RazorPagesMovie.Pages_Movies
                 return Page();
             }
 
-            _context.Attach(Movie).State = EntityState.Modified;
+            _context.Attach(Games).State = EntityState.Modified;
 
             try
             {
@@ -56,7 +56,7 @@ namespace RazorPagesMovie.Pages_Movies
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!MovieExists(Movie.Id))
+                if (!MovieExists(Games.Id))
                 {
                     return NotFound();
                 }
@@ -71,7 +71,7 @@ namespace RazorPagesMovie.Pages_Movies
 
         private bool MovieExists(int id)
         {
-            return _context.Movie.Any(e => e.Id == id);
+            return _context.Games.Any(e => e.Id == id);
         }
     }
 }

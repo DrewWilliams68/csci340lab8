@@ -6,40 +6,40 @@
 
 <h1>Edit</h1>
 
-<h4>Movie</h4>
+<h4>Games</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
         <form method="post">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <input type="hidden" asp-for="Movie.Id" />
+            <input type="hidden" asp-for="Games.Id" />
             <div class="form-group">
-                <label asp-for="Movie.Title" class="control-label"></label>
-                <input asp-for="Movie.Title" class="form-control" />
-                <span asp-validation-for="Movie.Title" class="text-danger"></span>
+                <label asp-for="Games.GameTitle" class="control-label"></label>
+                <input asp-for="Games.GameTitle" class="form-control" />
+                <span asp-validation-for="Games.GameTitle" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Movie.ReleaseDate" class="control-label"></label>
-                <input asp-for="Movie.ReleaseDate" class="form-control" />
-                <span asp-validation-for="Movie.ReleaseDate" class="text-danger"></span>
+                <label asp-for="Games.Price" class="control-label"></label>
+                <input asp-for="Games.Price" class="form-control" />
+                <span asp-validation-for="Games.Price" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Movie.Genre" class="control-label"></label>
-                <input asp-for="Movie.Genre" class="form-control" />
-                <span asp-validation-for="Movie.Genre" class="text-danger"></span>
+                <label asp-for="Games.Type" class="control-label"></label>
+                <input asp-for="Games.Type" class="form-control" />
+                <span asp-validation-for="Games.Type" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Movie.Price" class="control-label"></label>
-                <input asp-for="Movie.Price" class="form-control" />
-                <span asp-validation-for="Movie.Price" class="text-danger"></span>
+                <label asp-for="Games.SoldCopies" class="control-label"></label>
+                <input asp-for="Games.SoldCopies" class="form-control" />
+                <span asp-validation-for="Games.SoldCopies" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Movie.Rating" class="control-label"></label>
-                <input asp-for="Movie.Rating" class="form-control" />
-                <span asp-validation-for="Movie.Rating" class="text-danger"></span>
+                <label asp-for="Games.SkillLevel" class="control-label"></label>
+                <input asp-for="Games.SkillLevel" class="form-control" />
+                <span asp-validation-for="Games.SkillLevel" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
+                <input type="submit" value="Create" class="btn btn-primary" />
             </div>
         </form>
     </div>
