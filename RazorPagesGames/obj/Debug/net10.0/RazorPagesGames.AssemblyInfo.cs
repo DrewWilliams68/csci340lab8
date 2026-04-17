@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RazorPagesGames")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+77aae9c58c852d816b86b254a40ed7bb52b06954")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1dd3ee39c53b675ece33cc65936775b4b7be0e2b")]
 [assembly: System.Reflection.AssemblyProductAttribute("RazorPagesGames")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RazorPagesGames")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
