@@ -1,0 +1,55 @@
+@page
+@model RazorPagesGames.Pages_Games.EditModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Games</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Games.Id" />
+            <div class="form-group">
+                <label asp-for="Games.GameTitle" class="control-label"></label>
+                <input asp-for="Games.GameTitle" class="form-control" />
+                <span asp-validation-for="Games.GameTitle" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Games.Price" class="control-label"></label>
+                <input asp-for="Games.Price" class="form-control" />
+                <span asp-validation-for="Games.Price" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Games.SoldCopies" class="control-label"></label>
+                <input asp-for="Games.SoldCopies" class="form-control" />
+                <span asp-validation-for="Games.SoldCopies" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Games.Type" class="control-label"></label>
+                <input asp-for="Games.Type" class="form-control" />
+                <span asp-validation-for="Games.Type" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Games.SkillLevel" class="control-label"></label>
+                <input asp-for="Games.SkillLevel" class="form-control" />
+                <span asp-validation-for="Games.SkillLevel" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
