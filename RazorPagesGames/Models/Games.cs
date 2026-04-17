@@ -13,7 +13,7 @@ public class Games
     [Required]
     public string? GameTitle { get; set; }
 
-    [Range(1, 150)]
+    [Range(0, 150)]
     [DataType(DataType.Currency)]
     [Column(TypeName = "decimal(18, 2)")]
     [Required]
