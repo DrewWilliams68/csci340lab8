@@ -31,30 +31,30 @@ namespace RazorPagesGames.Pages_Games
         public string? GameType { get; set; }
 
     public async Task OnGetAsync()
-    {
+{
     // <snippet_search_linqQuery>
-        IQueryable<string> typeQuery = from m in _context.Games
-                                        orderby m.Type
-                                        select m.Type;
+    IQueryable<string> typeQuery = from m in _context.Games
+                                    orderby m.Type
+                                    select m.Type;
     // </snippet_search_linqQuery>
 
-        var games = from m in _context.Games
-                    select m;
+    var games = from m in _context.Games
+                 select m;
 
-        if (!string.IsNullOrEmpty(SearchString))
-        {
-            games = games.Where(s => s.GameTitle.Contains(SearchString));
-        }
+    if (!string.IsNullOrEmpty(SearchString))
+    {
+        games = games.Where(s => s.GameTitle.Contains(SearchString));
+    }
 
-        if (!string.IsNullOrEmpty(GameType))
-        {
-            games = games.Where(x => x.Type == GameType);
-        }
+    if (!string.IsNullOrEmpty(GameType))
+    {
+        games = games.Where(x => x.Type == GameType);
+    }
 
-        // <snippet_search_selectList>
-        Types = new SelectList(await typeQuery.Distinct().ToListAsync());
+    // <snippet_search_selectList>
+    Types = new SelectList(await typeQuery.Distinct().ToListAsync());
     // </snippet_search_selectList>
-        Games = await games.ToListAsync();
+    Games = await games.ToListAsync();
 }
     }
 }
