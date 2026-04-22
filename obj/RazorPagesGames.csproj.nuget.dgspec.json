@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Thatg\\OneDrive\\Desktop\\csci340lab8\\RazorPagesGames\\RazorPagesGames.csproj": {}
+    "C:\\Users\\Thatg\\OneDrive\\Desktop\\csci340lab8\\RazorPagesGames.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Thatg\\OneDrive\\Desktop\\csci340lab8\\RazorPagesGames\\RazorPagesGames.csproj": {
+    "C:\\Users\\Thatg\\OneDrive\\Desktop\\csci340lab8\\RazorPagesGames.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Thatg\\OneDrive\\Desktop\\csci340lab8\\RazorPagesGames\\RazorPagesGames.csproj",
+        "projectUniqueName": "C:\\Users\\Thatg\\OneDrive\\Desktop\\csci340lab8\\RazorPagesGames.csproj",
         "projectName": "RazorPagesGames",
-        "projectPath": "C:\\Users\\Thatg\\OneDrive\\Desktop\\csci340lab8\\RazorPagesGames\\RazorPagesGames.csproj",
+        "projectPath": "C:\\Users\\Thatg\\OneDrive\\Desktop\\csci340lab8\\RazorPagesGames.csproj",
         "packagesPath": "C:\\Users\\Thatg\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Thatg\\OneDrive\\Desktop\\csci340lab8\\RazorPagesGames\\obj\\",
+        "outputPath": "C:\\Users\\Thatg\\OneDrive\\Desktop\\csci340lab8\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Thatg\\AppData\\Roaming\\NuGet\\NuGet.Config"
