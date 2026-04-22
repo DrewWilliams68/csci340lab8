@@ -6466,11 +6466,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Thatg\\OneDrive\\Desktop\\csci340lab8\\RazorPagesGames.csproj",
+      "projectUniqueName": "C:\\Users\\Thatg\\OneDrive\\Desktop\\csci340lab8\\RazorPagesGames\\RazorPagesGames.csproj",
       "projectName": "RazorPagesGames",
-      "projectPath": "C:\\Users\\Thatg\\OneDrive\\Desktop\\csci340lab8\\RazorPagesGames.csproj",
+      "projectPath": "C:\\Users\\Thatg\\OneDrive\\Desktop\\csci340lab8\\RazorPagesGames\\RazorPagesGames.csproj",
       "packagesPath": "C:\\Users\\Thatg\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Thatg\\OneDrive\\Desktop\\csci340lab8\\obj\\",
+      "outputPath": "C:\\Users\\Thatg\\OneDrive\\Desktop\\csci340lab8\\RazorPagesGames\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Thatg\\AppData\\Roaming\\NuGet\\NuGet.Config"
